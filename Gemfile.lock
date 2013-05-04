@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    gesund-mongo (0.0.1)
+    gesund-mongo (0.0.2)
       bson_ext
       gesund
       mongo
