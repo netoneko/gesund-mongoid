@@ -24,4 +24,5 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "gesund"
   spec.add_runtime_dependency "mongo"
+  spec.add_runtime_dependency "bson_ext"
 end
