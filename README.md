@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/devops-israel/gesund-mongo.png)](https://travis-ci.org/devops-israel/gesund-mongo)
+
 # Gesund::Mongo
 
 TODO: Write a gem description
