@@ -3,7 +3,7 @@ PATH
   specs:
     gesund-mongo (0.0.2)
       bson_ext
-      gesund
+      gesund (~> 0.0.3)
       mongo
 
 GEM
@@ -13,7 +13,7 @@ GEM
     bson_ext (1.8.5)
       bson (~> 1.8.5)
     diff-lcs (1.2.4)
-    gesund (0.0.1)
+    gesund (0.0.3)
       rack
       thor
     mongo (1.8.5)

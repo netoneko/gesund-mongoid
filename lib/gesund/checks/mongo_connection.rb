@@ -3,14 +3,15 @@ require "mongo"
 module Gesund::Checks
   class MongoConnection
     include Gesund::Check
-    include ::Mongo
-    def initialize(options)
+    def initialize(options={})
       begin
-        self.success = (MongoClient.new.ping.keys.first == "ok")
-        self.message = "Mongo PING = OK"
+        if ::Mongo::MongoClient.new(options).ping.keys.first == "ok"
+          self.pass "Mongo PING = OK"
+        else
+          self.fail "Mongo PING != OK"
+        end
       rescue => e
-        self.message = "#{e.class}: #{e.message}"
-        self.success = false
+        self.fail "#{self.class} ERROR: #{e.class}: #{e.message}"
       end
     end
   end

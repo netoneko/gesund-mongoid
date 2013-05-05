@@ -1,3 +1,4 @@
+require "gesund"
 require "gesund/mongo/version"
 require "gesund/checks/mongo_connection"
 
