@@ -1,5 +1,5 @@
 module Gesund
-  module Mongo
+  module Mongoid
     VERSION = "0.0.3"
   end
 end

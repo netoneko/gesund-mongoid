@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/devops-israel/gesund-mongo.png)](https://travis-ci.org/devops-israel/gesund-mongo)
-
-# Gesund::Mongo
+# Gesund::Mongoid
 
 TODO: Write a gem description
 
@@ -8,7 +6,7 @@ TODO: Write a gem description
 
 Add this line to your application's Gemfile:
 
-    gem 'gesund-mongo'
+    gem 'gesund-mongoid'
 
 And then execute:
 
@@ -16,11 +14,17 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install gesund-mongo
+    $ gem install gesund-mongoid
 
 ## Usage
 
-TODO: Write usage instructions here
+Inside of your `Gesundfile`:
+
+```ruby
+check :mongoid_connection, config: "config/mongoid.yml"
+```
+
+I advise you to set Mongoid configuration options `max_retries` to `3` so checks won't take too long.
 
 ## Contributing
 
